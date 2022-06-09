@@ -38,6 +38,7 @@ export const Nav = styled.nav`
     width: 1.5rem;
     height: 1.5rem;
     margin-right: 4rem;
+    display: none;
 
     path {
       stroke: ${({ theme }) => theme.colors.white};
@@ -48,6 +49,10 @@ export const Nav = styled.nav`
     padding: 1rem 0;
     .nav-container {
       display: none;
+    }
+
+    svg {
+      display: inline;
     }
   }
 `;
@@ -96,4 +101,9 @@ export const Main = styled.main`
 
 export const Footer = styled.footer`
   padding: 2rem 4rem;
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+    text-align: center;
+  }
 `;

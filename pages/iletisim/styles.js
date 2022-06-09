@@ -29,7 +29,7 @@ export const Container = styled.div`
       font-size: 1rem;
     }
 
-    div {
+    form {
       display: flex;
       align-items: flex-end;
       justify-content: space-between;

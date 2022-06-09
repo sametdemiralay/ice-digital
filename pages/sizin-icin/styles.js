@@ -23,4 +23,10 @@ export const Container = styled.div`
       line-height: 1.5rem;
     }
   }
+
+  @media (max-width: 768px) {
+    .item {
+      width: 70%;
+    }
+  }
 `;

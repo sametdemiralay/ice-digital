@@ -1,7 +1,20 @@
+import { useState } from "react";
 import Title from "../../components/Title";
 import { Container } from "./styles";
 
 const Contact = () => {
+  const [email, setEmail] = useState("");
+
+  const handleMailChange = (e) => {
+    let inputVal = e.target.value;
+    setEmail(inputVal);
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log("selam");
+  };
+
   return (
     <>
       <Title text='İletişim' />
@@ -11,11 +24,17 @@ const Contact = () => {
           <h5>Bizimle İletişime Geçin !</h5>
           <span>Sizinle çalışmak için heyecanlıyız !</span>
 
-          <div>
+          <form onSubmit={sendEmail} method='post'>
             <label>Email</label>
-            <input />
-            <button>Subscribe</button>
-          </div>
+            <input
+              type='email'
+              name='email'
+              onChange={handleMailChange}
+              value={email}
+              placeholder='Email'
+            />
+            <button type='submit'>Subscribe</button>
+          </form>
         </div>
       </Container>
     </>

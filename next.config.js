@@ -5,6 +5,7 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-}
+  pageExtensions: ["hakkimizda.js", "iletisim.js", "sizin-icin.js"],
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

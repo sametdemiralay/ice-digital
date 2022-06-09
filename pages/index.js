@@ -3,17 +3,12 @@ import Link from "next/link";
 
 const Container = styled.div`
   background-image: url(/images/ice-digital-banner.webp);
-  /* position: relative;
-  top: 3rem; */
-  /* right: 0; */
   margin-top: 5rem;
-  /* left: -4rem; */
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* padding: 4rem; */
 
   div {
     padding: 4rem;
@@ -50,9 +45,12 @@ const Container = styled.div`
   @media (max-width: 768px) {
     height: 70vh;
     background-position: right;
+    margin-top: 4rem;
     div {
       padding: 2rem 1rem;
       text-align: center;
+      position: absolute;
+      bottom: 40%;
     }
 
     h1 {
